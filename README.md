@@ -7,6 +7,7 @@
 - [Task #3](#3)
 - [Task #4](#4)
 - [Task #5](#5)
+- [Task #6](#6)
 
 ### <a id="1">Task #1</a>
 
@@ -85,6 +86,16 @@ const a = {
 }
 
 //console.log(+a)
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="6">Task #6</a>
+
+```javascript
+const str = "0xford University"
+
+//console.log(parseInt(str))
 ```
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
