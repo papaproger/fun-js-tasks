@@ -10,6 +10,7 @@
 - [Task #6](#6)
 - [Task #7](#7)
 - [Task #8](#8)
+- [Task #9](#9)
 
 ### <a id="1">Task #1</a>
 
@@ -150,6 +151,46 @@ a = new F(10)
 a.a++
 
 //for (let i = 1; i <= 3;) a['f' + i++]()
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="9">Task #9</a>
+
+```javascript
+//"use strict"
+
+var a = 100
+
+let obj1 = {
+    a: 1,
+    f() {
+        this.a++
+        (function () { this.a++ })() // (*)
+    },
+}
+
+obj1.f()
+
+//console.log(`obj1.a = ${obj1.a}, a = ${a}`)
+```
+
+```javascript
+//"use strict"
+
+var a = 100
+
+let obj2 = {
+    a: 1,
+    f() {
+        this.a++
+        (() => { this.a++ })() // (*)
+    },
+}
+
+obj2.f()
+
+//console.log(`obj2.a = ${obj2.a}, a = ${a}`)
 ```
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
