@@ -8,6 +8,8 @@
 - [Task #4](#4)
 - [Task #5](#5)
 - [Task #6](#6)
+- [Task #7](#7)
+- [Task #8](#8)
 
 ### <a id="1">Task #1</a>
 
@@ -96,6 +98,58 @@ const a = {
 const str = "0xford University"
 
 //console.log(parseInt(str))
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="7">Task #7</a>
+
+```javascript
+//"use strict"
+
+var name = 'Masha'
+var age = 35
+
+let person = new function () {
+    this.name = 'Sveta'
+    this.age = 22
+    this.hello = function () { console.log(`Hello, ${this.name}!`) }
+    this.bye = () => { console.log(`Bye, ${this.name}!`) }
+}
+
+const user = {
+    name: 'Vova',
+    age: 32,
+    isAdmin: false,
+    happyBirthday: () => { console.log(`${this.name} is ${++this.age}.`) },
+
+    __proto__: person,
+}
+
+//user.hello()
+//user.bye()
+//user.happyBirthday()
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="8">Task #8</a>
+
+```javascript
+var a = 1
+
+function F(a) {
+    this.a = a
+    this.f1 = () => console.log(a)
+    this.f2 = () => console.log(this.a)
+    this.f3 = function () { console.log(this.a) }
+    return { ...this }
+}
+
+a = new F(10)
+a.a++
+
+//for (let i = 1; i <= 3;) a['f' + i++]()
 ```
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
