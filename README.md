@@ -2,13 +2,12 @@
 
 ### <a id="0">Contents</a>
 
-| odd | even |
-| --- | --- |
-| [Task #1](#1) | [Task #2](#2) |
-| [Task #3](#3) | [Task #4](#4) |
-| [Task #5](#5) | [Task #6](#6) |
-| [Task #7](#7) | [Task #8](#8) |
-| [Task #9](#9) | [Task #10](#10) |
+| | | |
+| --- | --- | --- |
+| [Task **#1**](#1) | [Task **#2**](#2) | [Task **#3**](#3) |
+| [Task **#4**](#4) | [Task **#5**](#5) | [Task **#6**](#6) |
+| [Task **#7**](#7) | [Task **#8**](#8) | [Task **#9**](#9) |
+| [Task **#10**](#10) | [Task **#11**](#11) | |
 
 ### <a id="1">Task #1</a>
 
@@ -206,6 +205,34 @@ function f() {
     let s = 'lexical scope'
     //f()
 }
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="11">Task #11</a>
+
+```javascript
+let a = 1
+
+const f = () => {
+    console.log(`%c ${a} `, 'color: white; background: red')
+}
+
+a = 2
+
+{
+    let a = 3
+
+    if (true) {
+        let a = 4
+        //f()
+        a = 5
+    }
+
+    a = 6
+}
+
+a = 7
 ```
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
