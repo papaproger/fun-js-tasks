@@ -7,7 +7,7 @@
 | [Task **#1**](#1) | [Task **#2**](#2) | [Task **#3**](#3) |
 | [Task **#4**](#4) | [Task **#5**](#5) | [Task **#6**](#6) |
 | [Task **#7**](#7) | [Task **#8**](#8) | [Task **#9**](#9) |
-| [Task **#10**](#10) | [Task **#11**](#11) | |
+| [Task **#10**](#10) | [Task **#11**](#11) | [Task **#12**](#12) |
 
 ### <a id="1">Task #1</a>
 
@@ -234,6 +234,24 @@ a = 2
 
 a = 7
 ```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="12">Task #12</a>
+
+```javascript
+function F(x) {
+    this.a = x
+    this.inc = () => { this.a++ }
+    //return { ...this }
+}
+
+obj = new F(1)
+obj.inc()
+//console.log(obj.a)
+```
+
+![Pic-1](pics/001.jpg "Pic #1")
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
 
