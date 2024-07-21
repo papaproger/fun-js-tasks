@@ -8,7 +8,7 @@
 | [Task **#4**](#4) | [Task **#5**](#5) | [Task **#6**](#6) |
 | [Task **#7**](#7) | [Task **#8**](#8) | [Task **#9**](#9) |
 | [Task **#10**](#10) | [Task **#11**](#11) | [Task **#12**](#12) |
-| [Task **#13**](#13) | [Task **#14**](#14) | |
+| [Task **#13**](#13) | [Task **#14**](#14) | [Task **#15**](#15) |
 
 ### <a id="1">Task #1</a>
 
@@ -306,6 +306,20 @@ const user = new User('Alex')
 
 //creature.hello(); creature.bye();
 //user.hello(); user.bye();
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="15">Task #15</a>
+
+```javascript
+const theArray = [29053366, 902869993114]
+const theKey = 0b100100
+const theStyle = 'color: #FFFFFF; background: #800080; font-size: 30px; padding: 0 15px;'
+
+const theFunction = () => theArray.map(i => i.toString(theKey)).join(' ').toUpperCase()
+
+//console.log(`%c${theFunction()}`, theStyle)
 ```
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
