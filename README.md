@@ -8,7 +8,7 @@
 | [Task **#4**](#4) | [Task **#5**](#5) | [Task **#6**](#6) |
 | [Task **#7**](#7) | [Task **#8**](#8) | [Task **#9**](#9) |
 | [Task **#10**](#10) | [Task **#11**](#11) | [Task **#12**](#12) |
-| [Task **#13**](#13) | | |
+| [Task **#13**](#13) | [Task **#14**](#14) | |
 
 ### <a id="1">Task #1</a>
 
@@ -272,6 +272,37 @@ const user = {
     name: 'Alex',
     __proto__: creature,
 }
+
+//creature.hello(); creature.bye();
+//user.hello(); user.bye();
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="14">Task #14</a>
+
+```javascript
+// "use strict"
+
+var name = 'Emma'
+
+class Creature {
+    constructor() {
+        this.hello = function () { console.log(`Hello, ${this.name || typeof this}!`) }
+        this.bye = () => { console.log(`Bye, ${this.name || typeof this}!`) }
+    }
+}
+
+const creature = new Creature()
+
+class User extends Creature {
+    constructor(name = 'Noname') {
+        super()
+        this.name = name
+    }
+}
+
+const user = new User('Alex')
 
 //creature.hello(); creature.bye();
 //user.hello(); user.bye();
