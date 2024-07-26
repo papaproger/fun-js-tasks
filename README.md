@@ -9,6 +9,7 @@
 | [Task **#7**](#7) | [Task **#8**](#8) | [Task **#9**](#9) |
 | [Task **#10**](#10) | [Task **#11**](#11) | [Task **#12**](#12) |
 | [Task **#13**](#13) | [Task **#14**](#14) | [Task **#15**](#15) |
+| [Task **#16**](#16) | | |
 
 ### <a id="1">Task #1</a>
 
@@ -320,6 +321,25 @@ const theStyle = 'color: #FFFFFF; background: #800080; font-size: 30px; padding:
 const theFunction = () => theArray.map(i => i.toString(theKey)).join(' ').toUpperCase()
 
 //console.log(`%c${theFunction()}`, theStyle)
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="16">Task #16</a>
+
+```javascript
+const obj1 = {}
+const obj2 = {}
+const obj3 = {}
+
+Object.defineProperty(obj1, 'prop', { value: 'Hello!' })
+Object.defineProperty(obj2, 'prop', { value: 'Bye!' })
+
+Object.defineProperty(obj3, '__proto__', { value: obj1 })
+obj3.__proto__ = obj2
+
+//console.log(obj3.__proto__.prop || 'No prop')
+//console.log(obj3.prop || 'No prop')
 ```
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
