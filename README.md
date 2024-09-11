@@ -9,7 +9,7 @@
 | [Task **#7**](#7) | [Task **#8**](#8) | [Task **#9**](#9) |
 | [Task **#10**](#10) | [Task **#11**](#11) | [Task **#12**](#12) |
 | [Task **#13**](#13) | [Task **#14**](#14) | [Task **#15**](#15) |
-| [Task **#16**](#16) | | |
+| [Task **#16**](#16) | [Task **#17**](#17) | |
 
 ### <a id="1">Task #1</a>
 
@@ -340,6 +340,33 @@ obj3.__proto__ = obj2
 
 //console.log(obj3.__proto__.prop || 'No prop')
 //console.log(obj3.prop || 'No prop')
+```
+
+<a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
+
+### <a id="17">Task #17</a>
+
+```javascript
+var func = function () { return 1 }
+var func = function () { return 2 }
+
+//console.log(func())
+```
+
+```javascript
+var func = function () { return 1 }
+function func() { return 2 }
+
+//console.log(func())
+```
+
+```javascript
+var func = function () { return 1 }
+{
+    function func() { return 2 }
+}
+
+//console.log(func())
 ```
 
 <a href="#0"><img src="https://img.shields.io/badge/go%20to%20contents%20&#9650;-242424?style=for-the-badge" alt="go to Contents" /></a>
